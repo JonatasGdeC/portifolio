@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NavHome" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="NavAbout" xml:space="preserve">
+    <value>Sobre mí</value>
+  </data>
+  <data name="NavWork" xml:space="preserve">
+    <value>Proyectos</value>
+  </data>
+  <data name="NavContact" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>Claro</value>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>Oscuro</value>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="HeroGreeting" xml:space="preserve">
+    <value>Hola, soy Jônatas Gonçalves de Carvalho,</value>
+  </data>
+  <data name="HeroTitle" xml:space="preserve">
+    <value>Desarrollador Full Stack</value>
+  </data>
+  <data name="HeroCta" xml:space="preserve">
+    <value>Contáctame</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>sobre mí</value>
+  </data>
+  <data name="AboutCopy" xml:space="preserve">
+    <value>Soy desarrollador Full Stack enfocado en .NET y Blazor, creando aplicaciones web completas — desde la interfaz hasta la integración con APIs y la lógica de negocio.
+
+Tengo experiencia en el desarrollo de sistemas eficientes y responsivos, con atención a buenas prácticas, organización del código y experiencia de usuario.
+
+Busco construir soluciones escalables y eficientes que resuelvan problemas reales.</value>
+  </data>
+  <data name="SkillFrontend" xml:space="preserve">
+    <value>Front-End</value>
+  </data>
+  <data name="SkillFrontendCopy" xml:space="preserve">
+    <value>C# | Html | Css | Explorar más</value>
+  </data>
+  <data name="SkillPython" xml:space="preserve">
+    <value>Python</value>
+  </data>
+  <data name="SkillPythonCopy" xml:space="preserve">
+    <value>4 años de experiencia</value>
+  </data>
+  <data name="SkillMl" xml:space="preserve">
+    <value>Machine Learning</value>
+  </data>
+  <data name="SkillMlCopy" xml:space="preserve">
+    <value>1/2 año de experiencia</value>
+  </data>
+  <data name="WorkTitle" xml:space="preserve">
+    <value>proyectos</value>
+  </data>
+  <data name="WorkCopy" xml:space="preserve">
+    <value>Proyectos que reflejan mi forma de resolver problemas y construir aplicaciones reales.</value>
+  </data>
+  <data name="ProjectTitle" xml:space="preserve">
+    <value>Design Portfolio</value>
+  </data>
+  <data name="ProjectTech" xml:space="preserve">
+    <value>HTML | CSS | JavaScript</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Contáctame</value>
+  </data>
+  <data name="ContactCopy" xml:space="preserve">
+    <value>Me encantaría conocer tu proyecto y cómo puedo ayudar. Completa el formulario y te responderé lo antes posible.</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="ContactNamePlaceholder" xml:space="preserve">
+    <value>Tu nombre</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ContactEmailPlaceholder" xml:space="preserve">
+    <value>correo@ejemplo.com</value>
+  </data>
+  <data name="ContactMessage" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="ContactMessagePlaceholder" xml:space="preserve">
+    <value>Cuéntame sobre tu proyecto</value>
+  </data>
+  <data name="ContactSubmit" xml:space="preserve">
+    <value>Enviar mensaje</value>
+  </data>
+</root>

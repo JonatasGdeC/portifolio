@@ -1,0 +1,31 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--color-black-primary);
+  color: var(--color-white-primary);
+  font-family: var(--font-family-default);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}

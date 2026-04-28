@@ -1,0 +1,93 @@
+@page "/"
+@using Portifolio.Components.Pages.Home.Components.Hero
+
+<PageTitle>JonatasGdeC</PageTitle>
+
+<Hero/>
+
+<section class="content-section" id="about">
+    <div class="section-heading">
+        <h2>@Localizer[name: "AboutTitle"]</h2>
+        <span></span>
+    </div>
+
+    <p class="section-copy">
+        @Localizer[name: "AboutCopy"]
+    </p>
+
+    <div class="skills-grid">
+        <article class="skill-card">
+            <h3>@Localizer[name: "SkillFrontend"]</h3>
+            <p>@Localizer[name: "SkillFrontendCopy"]</p>
+        </article>
+
+        <article class="skill-card">
+            <h3>@Localizer[name: "SkillPython"]</h3>
+            <p>@Localizer[name: "SkillPythonCopy"]</p>
+        </article>
+
+        <article class="skill-card">
+            <h3>@Localizer[name: "SkillMl"]</h3>
+            <p>@Localizer[name: "SkillMlCopy"]</p>
+        </article>
+    </div>
+</section>
+
+<section class="content-section" id="work">
+    <div class="section-heading">
+        <h2>@Localizer[name: "WorkTitle"]</h2>
+        <span></span>
+    </div>
+
+    <p class="section-copy">
+        @Localizer[name: "WorkCopy"]
+    </p>
+
+    <div class="projects-grid">
+        <article class="project-card">
+            <div class="project-thumbnail thumbnail-left"></div>
+            <div class="project-meta">
+                <h3>@Localizer[name: "ProjectTitle"]</h3>
+                <p>@Localizer[name: "ProjectTech"]</p>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-thumbnail thumbnail-right"></div>
+            <div class="project-meta">
+                <h3>@Localizer[name: "ProjectTitle"]</h3>
+                <p>@Localizer[name: "ProjectTech"]</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="content-section contact-section" id="contact">
+    <div class="section-heading">
+        <h2>@Localizer[name: "ContactTitle"]</h2>
+        <span></span>
+    </div>
+
+    <p class="section-copy contact-copy">
+        @Localizer[name: "ContactCopy"]
+    </p>
+
+    <form class="contact-form">
+        <label>
+            <span>@Localizer[name: "ContactName"]</span>
+            <input type="text" placeholder="@Localizer[name: "ContactNamePlaceholder"]" />
+        </label>
+
+        <label>
+            <span>@Localizer[name: "ContactEmail"]</span>
+            <input type="email" placeholder="@Localizer[name: "ContactEmailPlaceholder"]" />
+        </label>
+
+        <label>
+            <span>@Localizer[name: "ContactMessage"]</span>
+            <textarea rows="5" placeholder="@Localizer[name: "ContactMessagePlaceholder"]"></textarea>
+        </label>
+
+        <button type="submit">@Localizer[name: "ContactSubmit"]</button>
+    </form>
+</section>

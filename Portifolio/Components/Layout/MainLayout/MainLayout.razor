@@ -1,0 +1,36 @@
+@using Portifolio.Components.Layout.FooterMain
+@using Portifolio.Components.Layout.HeaderMain
+@inject SiteUiState UiState
+@implements IDisposable
+@inherits LayoutComponentBase
+
+<CascadingValue Value="UiState">
+    <div class="portfolio-shell @ThemeClass">
+        <div class="portfolio-panel">
+            <HeaderMain />
+            <main>
+                @Body
+            </main>
+            <FooterMain />
+        </div>
+    </div>
+</CascadingValue>
+
+@code {
+    private string ThemeClass => UiState.Theme == SiteTheme.Light ? "theme-light" : "theme-dark";
+
+    protected override void OnInitialized()
+    {
+        UiState.Changed += HandleUiChanged;
+    }
+
+    private void HandleUiChanged()
+    {
+        InvokeAsync(workItem: StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        UiState.Changed -= HandleUiChanged;
+    }
+}

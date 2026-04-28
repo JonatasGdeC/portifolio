@@ -1,0 +1,96 @@
+@using Portifolio.Components.Shared.SocialLinks
+<header>
+    <nav class="topbar" aria-label="Primary">
+        <div class="topbar-start">
+            <a class="brand" href="#home">@("<JonatasGdeC/>")</a>
+        </div>
+
+        <div class="topbar-links">
+            <a href="#home">@Localizer[name: "NavHome"]</a>
+            <a href="#about">@Localizer[name: "NavAbout"]</a>
+            <a href="#work">@Localizer[name: "NavWork"]</a>
+            <a href="#contact">@Localizer[name: "NavContact"]</a>
+        </div>
+        
+        <SocialLinks/>
+    </nav>
+
+    <aside class="settings-rail" aria-label="Settings">
+        @SettingsControls
+    </aside>
+
+    <button class="settings-trigger" type="button" aria-label="Open settings" aria-expanded="@IsSettingsOpen" @onclick="OpenSettings">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    @if (IsSettingsOpen)
+    {
+        <div class="settings-backdrop" @onclick="CloseSettings"></div>
+    }
+
+    <aside class="@SettingsDrawerClass" aria-label="Settings drawer">
+        <div class="settings-drawer-header">
+            <span>@Localizer[name: "SettingsTitle"]</span>
+            <button type="button" aria-label="Close settings" @onclick="CloseSettings">X</button>
+        </div>
+
+        @SettingsControls
+    </aside>
+</header>
+
+@code {
+    [CascadingParameter] public SiteUiState UiState { get; set; } = default!;
+
+    private bool IsSettingsOpen { get; set; }
+
+    private string SettingsDrawerClass => IsSettingsOpen ? "settings-drawer open" : "settings-drawer";
+
+    private RenderFragment SettingsControls => @<div class="toolbar-settings">
+        <div class="setting-group">
+            <span>@Localizer[name: "ThemeLabel"]</span>
+            <div class="setting-options">
+                <button class="@ThemeButtonClass(theme: SiteTheme.Light)" @onclick="@(() => UiState.SetTheme(theme: SiteTheme.Light))" type="button">
+                    @Localizer[name: "ThemeLight"]
+                </button>
+                <button class="@ThemeButtonClass(theme: SiteTheme.Dark)" @onclick="@(() => UiState.SetTheme(theme: SiteTheme.Dark))" type="button">
+                    @Localizer[name: "ThemeDark"]
+                </button>
+            </div>
+        </div>
+
+        <div class="setting-group">
+            <span>@Localizer[name: "LanguageLabel"]</span>
+            <div class="setting-options">
+                <button class="@LanguageButtonClass(language: SiteLanguage.Pt)" @onclick="@(() => NavigateToCulture(culture: "pt"))" type="button">PT</button>
+                <button class="@LanguageButtonClass(language: SiteLanguage.En)" @onclick="@(() => NavigateToCulture(culture: "en"))" type="button">EN</button>
+                <button class="@LanguageButtonClass(language: SiteLanguage.Es)" @onclick="@(() => NavigateToCulture(culture: "es"))" type="button">ES</button>
+            </div>
+        </div>
+    </div>;
+
+    private string ThemeButtonClass(SiteTheme theme) =>
+        UiState.Theme == theme ? "setting-button active" : "setting-button";
+
+    private string LanguageButtonClass(SiteLanguage language) =>
+        UiState.Language == language ? "setting-button active" : "setting-button";
+
+    private void OpenSettings()
+    {
+        IsSettingsOpen = true;
+    }
+
+    private void CloseSettings()
+    {
+        IsSettingsOpen = false;
+    }
+    
+    private void NavigateToCulture(string culture)
+    {
+        string uri = new Uri(uriString: NavigationManager.Uri).GetComponents(components: UriComponents.PathAndQuery, format: UriFormat.Unescaped);
+        string cultureEscaped = Uri.EscapeDataString(stringToEscape: culture);
+        string uriEscaped = Uri.EscapeDataString(stringToEscape: uri);
+        NavigationManager.NavigateTo(uri: $"Culture/Set?culture={cultureEscaped}&redirectUri={uriEscaped}", forceLoad: true);
+    }
+}
