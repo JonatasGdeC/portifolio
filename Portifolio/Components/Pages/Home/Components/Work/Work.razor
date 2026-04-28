@@ -9,20 +9,66 @@
     </p>
 
     <div class="projects-grid">
-        <article class="project-card">
-            <div class="project-thumbnail thumbnail-left"></div>
-            <div class="project-meta">
-                <h3>@Localizer[name: "ProjectTitle"]</h3>
-                <p>@Localizer[name: "ProjectTech"]</p>
-            </div>
-        </article>
-
-        <article class="project-card">
-            <div class="project-thumbnail thumbnail-right"></div>
-            <div class="project-meta">
-                <h3>@Localizer[name: "ProjectTitle"]</h3>
-                <p>@Localizer[name: "ProjectTech"]</p>
-            </div>
-        </article>
+        @foreach (Project project in Projects)
+        {
+            <button class="project-card" type="button" @onclick="() => OpenProject(project: project)">
+                <div class="project-thumbnail @project.ThumbnailClass"></div>
+                <div class="project-meta">
+                    <h3>@project.Title</h3>
+                    <p>@project.Summary</p>
+                </div>
+            </button>
+        }
     </div>
 </section>
+
+@if (SelectedProject is not null)
+{
+    <div class="project-modal-backdrop" role="presentation" @onclick="CloseProject">
+        <section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" @onclick:stopPropagation>
+            <button class="modal-close" type="button" aria-label="Fechar modal" @onclick="CloseProject">x</button>
+
+            <div class="project-carousel" aria-label="Imagens do projeto">
+                <button class="carousel-control" type="button" aria-label="Imagem anterior" @onclick="PreviousImage">&lt;</button>
+
+                <div class="carousel-frame">
+                    <div class="carousel-image @SelectedProject.Images[ActiveImageIndex].CssClass">
+                        <span>@SelectedProject.Images[ActiveImageIndex].Label</span>
+                    </div>
+                </div>
+
+                <button class="carousel-control" type="button" aria-label="Próxima imagem" @onclick="NextImage">&gt;</button>
+            </div>
+
+            <div class="carousel-dots" aria-label="Selecionar imagem">
+                @for (int index = 0; index < SelectedProject.Images.Length; index++)
+                {
+                    int imageIndex = index;
+                    <button class="@(ActiveImageIndex == imageIndex ? "dot active" : "dot")"
+                            type="button"
+                            aria-label="Mostrar imagem @(imageIndex + 1)"
+                            @onclick="() => SetImage(imageIndex: imageIndex)">
+                    </button>
+                }
+            </div>
+
+            <div class="modal-content">
+                <p class="modal-kicker">@SelectedProject.Category</p>
+                <h3 id="project-modal-title">@SelectedProject.Title</h3>
+                <p class="modal-description">@SelectedProject.Description</p>
+
+                <div class="tools-list" aria-label="Ferramentas utilizadas">
+                    @foreach (string tool in SelectedProject.Tools)
+                    {
+                        <span>@tool</span>
+                    }
+                </div>
+
+                <div class="project-links">
+                    <a href="@SelectedProject.GithubUrl" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="@SelectedProject.LiveUrl" target="_blank" rel="noreferrer">Produção</a>
+                </div>
+            </div>
+        </section>
+    </div>
+}
