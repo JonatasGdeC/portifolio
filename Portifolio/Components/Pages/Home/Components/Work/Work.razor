@@ -1,3 +1,5 @@
+@using Portifolio.Models
+
 <section class="content-section" id="work">
     <div class="section-heading">
         <h2>@Localizer[name: "WorkTitle"]</h2>
@@ -9,10 +11,16 @@
     </p>
 
     <div class="projects-grid">
-        @foreach (Project project in Projects)
+        @foreach (ProjectModel project in Projects)
         {
             <button class="project-card" type="button" @onclick="() => OpenProject(project: project)">
-                <div class="project-thumbnail @project.ThumbnailClass"></div>
+                <div class="project-thumbnail">
+                    @if (project.Images.Count > 0)
+                    {
+                        <img src="@GetThumbnailUrl(project: project)" alt="@project.Title" />
+                    }
+                </div>
+
                 <div class="project-meta">
                     <h3>@project.Title</h3>
                     <p>@project.Summary</p>
@@ -32,16 +40,19 @@
                 <button class="carousel-control" type="button" aria-label="Imagem anterior" @onclick="PreviousImage">&lt;</button>
 
                 <div class="carousel-frame">
-                    <div class="carousel-image @SelectedProject.Images[ActiveImageIndex].CssClass">
-                        <span>@SelectedProject.Images[ActiveImageIndex].Label</span>
-                    </div>
+                    @if (SelectedProject.Images.Count > 0)
+                    {
+                        <img class="carousel-image"
+                             src="@GetImageUrl(project: SelectedProject, imageIndex: ActiveImageIndex)"
+                             alt="@($"{SelectedProject.Title} - imagem {ActiveImageIndex + 1}")" />
+                    }
                 </div>
 
-                <button class="carousel-control" type="button" aria-label="Próxima imagem" @onclick="NextImage">&gt;</button>
+                <button class="carousel-control" type="button" aria-label="Proxima imagem" @onclick="NextImage">&gt;</button>
             </div>
 
             <div class="carousel-dots" aria-label="Selecionar imagem">
-                @for (int index = 0; index < SelectedProject.Images.Length; index++)
+                @for (int index = 0; index < SelectedProject.Images.Count; index++)
                 {
                     int imageIndex = index;
                     <button class="@(ActiveImageIndex == imageIndex ? "dot active" : "dot")"
@@ -65,8 +76,15 @@
                 </div>
 
                 <div class="project-links">
-                    <a href="@SelectedProject.GithubUrl" target="_blank" rel="noreferrer">GitHub</a>
-                    <a href="@SelectedProject.LiveUrl" target="_blank" rel="noreferrer">Produção</a>
+                    @if (!string.IsNullOrWhiteSpace(value: SelectedProject.UrlGithub))
+                    {
+                        <a href="@SelectedProject.UrlGithub" target="_blank" rel="noreferrer">GitHub</a>
+                    }
+
+                    @if (!string.IsNullOrWhiteSpace(value: SelectedProject.Url))
+                    {
+                        <a href="@SelectedProject.Url" target="_blank" rel="noreferrer">Producao</a>
+                    }
                 </div>
             </div>
         </section>
