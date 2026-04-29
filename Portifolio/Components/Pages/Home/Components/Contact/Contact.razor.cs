@@ -9,7 +9,7 @@ public partial class Contact
     [Inject]
     private IConfiguration Configuration { get; set; } = default!;
 
-    private string AccessKey => Configuration[key: "Web3Forms:AccessKey"] ?? string.Empty;
+    private string AccessKey => Configuration[key: "WEB3FORMS_ACCESS_KEY"] ?? Configuration[key: "Web3Forms:AccessKey"] ?? string.Empty;
 
     private string SuccessRedirectUrl => $"{NavigationManager.BaseUri.TrimEnd(trimChar: '/')}?contact=success#contact";
 

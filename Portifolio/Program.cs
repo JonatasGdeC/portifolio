@@ -11,6 +11,8 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddControllers(); 
 
+builder.Configuration.AddEnvironmentVariables();
+
 WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,7 +32,6 @@ RequestLocalizationOptions localizationOptions = new RequestLocalizationOptions(
 app.UseRequestLocalization(options: localizationOptions);
 
 app.UseStatusCodePagesWithReExecute(pathFormat: "/not-found", createScopeForStatusCodePages: true);
-// app.UseHttpsRedirection();
 
 app.UseAntiforgery();
 
