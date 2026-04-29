@@ -49,44 +49,23 @@
     <value>Entre em contato</value>
   </data>
   <data name="AboutTitle" xml:space="preserve">
-    <value>sobre</value>
+    <value>Sobre</value>
   </data>
   <data name="AboutCopy" xml:space="preserve">
-    <value>Sou desenvolvedor Full Stack com foco em .NET e Blazor, criando aplicações web completas — da interface até a integração com APIs e regras de negócio.
+    <value>Sou desenvolvedor Full Stack com foco em .NET e Blazor, atuando na construção de aplicações web completas — desde a criação de interfaces até o desenvolvimento de APIs e regras de negócio.
 
-Tenho experiência no desenvolvimento de sistemas performáticos e responsivos, com atenção a boas práticas, organização de código e experiência do usuário.
+Tenho experiência no desenvolvimento de sistemas web responsivos e performáticos, trabalhando com integração de APIs, organização de código e boas práticas de desenvolvimento. Já atuei na construção de aplicações com foco em usabilidade, SEO e qualidade de entrega.
 
-Busco construir soluções eficientes, escaláveis e que realmente resolvam problemas.</value>
+Busco desenvolver soluções bem estruturadas, escaláveis e que resolvam problemas reais de forma eficiente.</value>
   </data>
-  <data name="SkillFrontend" xml:space="preserve">
-    <value>Front-End</value>
-  </data>
-  <data name="SkillFrontendCopy" xml:space="preserve">
-    <value>C# | Html | Css | Explorar mais</value>
-  </data>
-  <data name="SkillPython" xml:space="preserve">
-    <value>Python</value>
-  </data>
-  <data name="SkillPythonCopy" xml:space="preserve">
-    <value>4 anos de experiência</value>
-  </data>
-  <data name="SkillMl" xml:space="preserve">
-    <value>Machine Learning</value>
-  </data>
-  <data name="SkillMlCopy" xml:space="preserve">
-    <value>1/2 ano de experiência</value>
+  <data name="SkillOthers" xml:space="preserve">
+    <value>Outras Habilidades</value>
   </data>
   <data name="WorkTitle" xml:space="preserve">
-    <value>projetos</value>
+    <value>Projetos</value>
   </data>
   <data name="WorkCopy" xml:space="preserve">
     <value>Projetos que refletem minha forma de pensar, desenvolver e resolver problemas na prática.</value>
-  </data>
-  <data name="ProjectTitle" xml:space="preserve">
-    <value>Design Portfolio</value>
-  </data>
-  <data name="ProjectTech" xml:space="preserve">
-    <value>HTML | CSS | JavaScript</value>
   </data>
   <data name="ContactTitle" xml:space="preserve">
     <value>Fale Comigo</value>
@@ -99,9 +78,6 @@ Busco construir soluções eficientes, escaláveis e que realmente resolvam prob
   </data>
   <data name="ContactNamePlaceholder" xml:space="preserve">
     <value>Seu nome</value>
-  </data>
-  <data name="ContactEmail" xml:space="preserve">
-    <value>Email</value>
   </data>
   <data name="ContactEmailPlaceholder" xml:space="preserve">
     <value>email@exemplo.com</value>

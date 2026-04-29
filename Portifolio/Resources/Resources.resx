@@ -19,7 +19,7 @@
     <value>About</value>
   </data>
   <data name="NavWork" xml:space="preserve">
-    <value>Projects</value>
+    <value>Work</value>
   </data>
   <data name="NavContact" xml:space="preserve">
     <value>Contact</value>
@@ -49,7 +49,7 @@
     <value>Contact me</value>
   </data>
   <data name="AboutTitle" xml:space="preserve">
-    <value>about</value>
+    <value>About</value>
   </data>
   <data name="AboutCopy" xml:space="preserve">
     <value>I am a Full Stack Developer focused on .NET and Blazor, building complete web applications — from user interfaces to API integration and business logic.
@@ -62,31 +62,25 @@ I aim to build efficient, scalable solutions that solve real problems.</value>
     <value>Front-End</value>
   </data>
   <data name="SkillFrontendCopy" xml:space="preserve">
-    <value>C# | Html | Css | Explore more</value>
+    <value>Blazor | HTML | CSS | JavaScript | UX/UI | Figma | Lighthouse | SEO</value>
   </data>
-  <data name="SkillPython" xml:space="preserve">
-    <value>Python</value>
+  <data name="SkillBackend" xml:space="preserve">
+    <value>Back-End</value>
   </data>
-  <data name="SkillPythonCopy" xml:space="preserve">
-    <value>4 years of experience</value>
+  <data name="SkillBackendCopy" xml:space="preserve">
+    <value>C# | .NET | Entity Framework | SQL Server | SQLite | APIs REST</value>
   </data>
-  <data name="SkillMl" xml:space="preserve">
-    <value>Machine Learning</value>
+  <data name="SkillOthers" xml:space="preserve">
+    <value>Others Skills</value>
   </data>
-  <data name="SkillMlCopy" xml:space="preserve">
-    <value>1/2 year of experience</value>
+  <data name="SkillOthersCopy" xml:space="preserve">
+    <value>GIT | Trello</value>
   </data>
   <data name="WorkTitle" xml:space="preserve">
-    <value>projects</value>
+    <value>Work</value>
   </data>
   <data name="WorkCopy" xml:space="preserve">
     <value>Projects that reflect how I approach problem-solving and build real-world applications.</value>
-  </data>
-  <data name="ProjectTitle" xml:space="preserve">
-    <value>Design Portfolio</value>
-  </data>
-  <data name="ProjectTech" xml:space="preserve">
-    <value>HTML | CSS | JavaScript</value>
   </data>
   <data name="ContactTitle" xml:space="preserve">
     <value>Get in touch</value>

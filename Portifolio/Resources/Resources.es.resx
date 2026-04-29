@@ -49,7 +49,7 @@
     <value>Contáctame</value>
   </data>
   <data name="AboutTitle" xml:space="preserve">
-    <value>sobre mí</value>
+    <value>Sobre mí</value>
   </data>
   <data name="AboutCopy" xml:space="preserve">
     <value>Soy desarrollador Full Stack enfocado en .NET y Blazor, creando aplicaciones web completas — desde la interfaz hasta la integración con APIs y la lógica de negocio.
@@ -58,35 +58,14 @@ Tengo experiencia en el desarrollo de sistemas eficientes y responsivos, con ate
 
 Busco construir soluciones escalables y eficientes que resuelvan problemas reales.</value>
   </data>
-  <data name="SkillFrontend" xml:space="preserve">
-    <value>Front-End</value>
-  </data>
-  <data name="SkillFrontendCopy" xml:space="preserve">
-    <value>C# | Html | Css | Explorar más</value>
-  </data>
-  <data name="SkillPython" xml:space="preserve">
-    <value>Python</value>
-  </data>
-  <data name="SkillPythonCopy" xml:space="preserve">
-    <value>4 años de experiencia</value>
-  </data>
-  <data name="SkillMl" xml:space="preserve">
-    <value>Machine Learning</value>
-  </data>
-  <data name="SkillMlCopy" xml:space="preserve">
-    <value>1/2 año de experiencia</value>
+  <data name="SkillOthers" xml:space="preserve">
+    <value>Otras habilidades</value>
   </data>
   <data name="WorkTitle" xml:space="preserve">
-    <value>proyectos</value>
+    <value>Proyectos</value>
   </data>
   <data name="WorkCopy" xml:space="preserve">
     <value>Proyectos que reflejan mi forma de resolver problemas y construir aplicaciones reales.</value>
-  </data>
-  <data name="ProjectTitle" xml:space="preserve">
-    <value>Design Portfolio</value>
-  </data>
-  <data name="ProjectTech" xml:space="preserve">
-    <value>HTML | CSS | JavaScript</value>
   </data>
   <data name="ContactTitle" xml:space="preserve">
     <value>Contáctame</value>
@@ -99,9 +78,6 @@ Busco construir soluciones escalables y eficientes que resuelvan problemas reale
   </data>
   <data name="ContactNamePlaceholder" xml:space="preserve">
     <value>Tu nombre</value>
-  </data>
-  <data name="ContactEmail" xml:space="preserve">
-    <value>Email</value>
   </data>
   <data name="ContactEmailPlaceholder" xml:space="preserve">
     <value>correo@ejemplo.com</value>

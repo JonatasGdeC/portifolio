@@ -73,7 +73,7 @@ namespace Portifolio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to about.
+        ///   Looks up a localized string similar to About.
         /// </summary>
         public static string AboutTitle {
             get {
@@ -226,29 +226,11 @@ namespace Portifolio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Projects.
+        ///   Looks up a localized string similar to Work.
         /// </summary>
         public static string NavWork {
             get {
                 return ResourceManager.GetString("NavWork", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to HTML | CSS | JavaScript.
-        /// </summary>
-        public static string ProjectTech {
-            get {
-                return ResourceManager.GetString("ProjectTech", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Design Portfolio.
-        /// </summary>
-        public static string ProjectTitle {
-            get {
-                return ResourceManager.GetString("ProjectTitle", resourceCulture);
             }
         }
         
@@ -262,6 +244,24 @@ namespace Portifolio.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back-End.
+        /// </summary>
+        public static string SkillBackend {
+            get {
+                return ResourceManager.GetString("SkillBackend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C# | .NET | Entity Framework | SQL Server | SQLite | APIs REST.
+        /// </summary>
+        public static string SkillBackendCopy {
+            get {
+                return ResourceManager.GetString("SkillBackendCopy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Front-End.
         /// </summary>
         public static string SkillFrontend {
@@ -271,7 +271,7 @@ namespace Portifolio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C# | Html | Css | Explore more.
+        ///   Looks up a localized string similar to Blazor | HTML | CSS | JavaScript | UX/UI | Figma | Lighthouse | SEO.
         /// </summary>
         public static string SkillFrontendCopy {
             get {
@@ -280,38 +280,20 @@ namespace Portifolio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Machine Learning.
+        ///   Looks up a localized string similar to Others Skills.
         /// </summary>
-        public static string SkillMl {
+        public static string SkillOthers {
             get {
-                return ResourceManager.GetString("SkillMl", resourceCulture);
+                return ResourceManager.GetString("SkillOthers", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1/2 year of experience.
+        ///   Looks up a localized string similar to GIT | Trello.
         /// </summary>
-        public static string SkillMlCopy {
+        public static string SkillOthersCopy {
             get {
-                return ResourceManager.GetString("SkillMlCopy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Python.
-        /// </summary>
-        public static string SkillPython {
-            get {
-                return ResourceManager.GetString("SkillPython", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 4 years of experience.
-        /// </summary>
-        public static string SkillPythonCopy {
-            get {
-                return ResourceManager.GetString("SkillPythonCopy", resourceCulture);
+                return ResourceManager.GetString("SkillOthersCopy", resourceCulture);
             }
         }
         
@@ -352,7 +334,7 @@ namespace Portifolio.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to projects.
+        ///   Looks up a localized string similar to Work.
         /// </summary>
         public static string WorkTitle {
             get {
