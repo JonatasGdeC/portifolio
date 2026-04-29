@@ -1,31 +1,7 @@
-.content-section {
-  padding: 0 0 72px;
-}
-
-.section-heading {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 18px;
-}
-
-.section-heading h2,
 .project-meta h3,
 .modal-content h3 {
-  font-family: var(--font-family-title);
+  font-family: var(--font-family-title), sans-serif;
   letter-spacing: -0.04em;
-}
-
-.section-heading h2 {
-  color: var(--color-blue-primary);
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 0.95;
-}
-
-.section-heading span {
-  height: 1px;
-  background: rgba(245, 240, 234, 0.7);
 }
 
 .section-copy {
@@ -280,15 +256,6 @@
 }
 
 @media (max-width: 640px) {
-  .content-section {
-    padding-bottom: 60px;
-  }
-
-  .section-heading {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
   .section-copy {
     margin-bottom: 28px;
     line-height: 1.65;

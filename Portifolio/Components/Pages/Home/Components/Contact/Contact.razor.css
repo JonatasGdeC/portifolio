@@ -1,0 +1,101 @@
+.contact-copy {
+  max-width: 620px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 28px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form span,
+.contact-form input,
+.contact-form textarea,
+.contact-form button,
+.form-status,
+.validation-message {
+  font-size: 0.95rem;
+}
+
+.contact-form span {
+  color: var(--color-grey-primary);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid rgba(245, 240, 234, 0.5);
+  padding: 6px 0 14px;
+  background: transparent;
+  color: var(--color-white-primary);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(217, 210, 203, 0.52);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  justify-self: center;
+  border: none;
+  border-bottom: 1px solid var(--color-blue-primary);
+  padding: 0 0 6px;
+  background: transparent;
+  color: var(--color-white-primary);
+  cursor: pointer;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-form button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  opacity: 0.88;
+}
+
+.contact-form button:disabled {
+  cursor: wait;
+  opacity: 0.58;
+}
+
+.botcheck {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-status {
+  justify-self: center;
+  margin: -4px 0 0;
+  text-align: center;
+}
+
+.form-status-success {
+  color: var(--color-blue-light);
+}
+
+.form-status-error,
+.validation-message {
+  color: var(--color-red-primary);
+}
+
+@media (max-width: 640px) {
+  .section-copy {
+    margin-bottom: 28px;
+    line-height: 1.65;
+  }
+}

@@ -91,4 +91,13 @@ Busco construir soluciones escalables y eficientes que resuelvan problemas reale
   <data name="ContactSubmit" xml:space="preserve">
     <value>Enviar mensaje</value>
   </data>
+  <data name="ContactSuccess" xml:space="preserve">
+    <value>Contacto enviado con exito.</value>
+  </data>
+  <data name="ContactMissingAccessKey" xml:space="preserve">
+    <value>Configura la clave de acceso de Web3Forms para activar el envio del contacto.</value>
+  </data>
+  <data name="ContactError" xml:space="preserve">
+    <value>No fue posible enviar el contacto ahora. Intentalo de nuevo mas tarde.</value>
+  </data>
 </root>

@@ -109,4 +109,13 @@ I aim to build efficient, scalable solutions that solve real problems.</value>
   <data name="ContactSubmit" xml:space="preserve">
     <value>Send message</value>
   </data>
+  <data name="ContactSuccess" xml:space="preserve">
+    <value>Contact sent successfully.</value>
+  </data>
+  <data name="ContactMissingAccessKey" xml:space="preserve">
+    <value>Configure the Web3Forms access key to enable contact submissions.</value>
+  </data>
+  <data name="ContactError" xml:space="preserve">
+    <value>Unable to send the contact right now. Please try again later.</value>
+  </data>
 </root>
