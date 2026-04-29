@@ -30,7 +30,7 @@ RequestLocalizationOptions localizationOptions = new RequestLocalizationOptions(
 app.UseRequestLocalization(options: localizationOptions);
 
 app.UseStatusCodePagesWithReExecute(pathFormat: "/not-found", createScopeForStatusCodePages: true);
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseAntiforgery();
 
