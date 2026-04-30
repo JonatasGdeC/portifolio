@@ -42,9 +42,14 @@
                 <div class="carousel-frame">
                     @if (SelectedProject.Images.Count > 0)
                     {
-                        <img class="carousel-image"
-                             src="@GetImageUrl(project: SelectedProject, imageIndex: ActiveImageIndex)"
-                             alt="@($"{SelectedProject.Title} - imagem {ActiveImageIndex + 1}")" />
+                        <button class="carousel-image-button"
+                                type="button"
+                                aria-label="Ampliar imagem @(ActiveImageIndex + 1)"
+                                @onclick="OpenImageModal">
+                            <img class="carousel-image"
+                                 src="@GetImageUrl(project: SelectedProject, imageIndex: ActiveImageIndex)"
+                                 alt="@($"{SelectedProject.Title} - imagem {ActiveImageIndex + 1}")" />
+                        </button>
                     }
                 </div>
 
@@ -89,4 +94,41 @@
             </div>
         </section>
     </div>
+
+    @if (IsImageModalOpen && SelectedProject.Images.Count > 0)
+    {
+        <div class="image-modal-backdrop" role="presentation" @onclick="CloseImageModal">
+            <section class="image-modal" role="dialog" aria-modal="true" aria-label="Imagem ampliada do projeto" @onclick:stopPropagation>
+                <button class="modal-close image-modal-close" type="button" aria-label="Fechar imagem ampliada" @onclick="CloseImageModal">x</button>
+
+                <div class="image-carousel" aria-label="Carrossel de imagens ampliadas">
+                    <button class="carousel-control image-carousel-control" type="button" aria-label="Imagem anterior" @onclick="PreviousImage">&lt;</button>
+
+                    <div class="image-carousel-frame">
+                        <img class="image-modal-image"
+                             src="@GetImageUrl(project: SelectedProject, imageIndex: ActiveImageIndex)"
+                             alt="@($"{SelectedProject.Title} - imagem ampliada {ActiveImageIndex + 1}")" />
+                    </div>
+
+                    <button class="carousel-control image-carousel-control" type="button" aria-label="Proxima imagem" @onclick="NextImage">&gt;</button>
+                </div>
+
+                <div class="image-modal-footer">
+                    <div class="carousel-dots image-carousel-dots" aria-label="Selecionar imagem ampliada">
+                        @for (int index = 0; index < SelectedProject.Images.Count; index++)
+                        {
+                            int imageIndex = index;
+                            <button class="@(ActiveImageIndex == imageIndex ? "dot active" : "dot")"
+                                    type="button"
+                                    aria-label="Mostrar imagem ampliada @(imageIndex + 1)"
+                                    @onclick="() => SetImage(imageIndex: imageIndex)">
+                            </button>
+                        }
+                    </div>
+
+                    <span class="image-counter">@(ActiveImageIndex + 1) / @SelectedProject.Images.Count</span>
+                </div>
+            </section>
+        </div>
+    }
 }

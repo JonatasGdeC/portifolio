@@ -15,6 +15,8 @@ public partial class Work
 
     private int ActiveImageIndex { get; set; }
 
+    private bool IsImageModalOpen { get; set; }
+
     protected override async Task OnInitializedAsync()
     {
         string projectsPath = Path.Combine(path1: GetWebRootPath(), path2: "mock", path3: "projects.json");
@@ -40,11 +42,27 @@ public partial class Work
     {
         SelectedProject = null;
         ActiveImageIndex = 0;
+        IsImageModalOpen = false;
     }
 
     private void SetImage(int imageIndex)
     {
         ActiveImageIndex = imageIndex;
+    }
+
+    private void OpenImageModal()
+    {
+        if (SelectedProject is null || SelectedProject.Images.Count == 0)
+        {
+            return;
+        }
+
+        IsImageModalOpen = true;
+    }
+
+    private void CloseImageModal()
+    {
+        IsImageModalOpen = false;
     }
 
     private void PreviousImage()
