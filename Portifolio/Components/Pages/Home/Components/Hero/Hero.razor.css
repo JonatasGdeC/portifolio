@@ -6,8 +6,6 @@
     padding: 64px 0 72px;
 
     .hero-copy {
-        flex: 1 1 420px;
-        max-width: 460px;
 
         & > .eyebrow {
             margin-bottom: 16px;
@@ -16,7 +14,6 @@
         }
 
         & > h1 {
-            max-width: 7ch;
             margin-bottom: 22px;
             color: var(--color-blue-primary);
             font-family: var(--font-family-title), sans-serif;
@@ -55,17 +52,23 @@
 @media (max-width: 920px) {
     .hero {
         flex-direction: column;
-        align-items: flex-start;
-        padding-top: 42px;
-        padding-bottom: 60px;
-    }
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
 
-    .hero-copy {
-        max-width: none;
-    }
+        .hero-copy {
+            text-align: center;
 
-    .hero-copy h1 {
-        max-width: 10ch;
+            & > h1 {
+                max-width: none;
+            }
+        }
+
+        .hero-profile {
+            max-width: 500px;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 

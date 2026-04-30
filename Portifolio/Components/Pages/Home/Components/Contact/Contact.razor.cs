@@ -4,10 +4,9 @@ namespace Portifolio.Components.Pages.Home.Components.Contact;
 
 public partial class Contact
 {
+    [Inject] private IConfiguration Configuration { get; set; } = default!;
+    
     private const string Web3FormsEndpoint = "https://api.web3forms.com/submit";
-
-    [Inject]
-    private IConfiguration Configuration { get; set; } = default!;
 
     private string AccessKey => Configuration[key: "WEB3FORMS_ACCESS_KEY"] ?? Configuration[key: "Web3Forms:AccessKey"] ?? string.Empty;
 

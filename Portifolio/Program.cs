@@ -41,7 +41,10 @@ app.UseStaticFiles();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
-string port = Environment.GetEnvironmentVariable(variable: "PORT") ?? "5000";
-app.Urls.Add(item: $"http://*:{port}");
+if (!app.Environment.IsDevelopment())
+{
+    string port = Environment.GetEnvironmentVariable(variable: "PORT") ?? "5000";
+    app.Urls.Add(item: $"http://*:{port}");
+}
 
 app.Run();
