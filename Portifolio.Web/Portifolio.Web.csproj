@@ -50,5 +50,8 @@
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Pages\Home\Components\Work\Work.razor" />
       <_ContentIncludedByDefault Remove="Layout\Settings\Settings.razor" />
+      <_ContentIncludedByDefault Remove="wwwroot\media\projects\iplace\1.webp" />
+      <_ContentIncludedByDefault Remove="wwwroot\media\projects\iplace\2.webp" />
+      <_ContentIncludedByDefault Remove="wwwroot\media\projects\iplace\3.webp" />
     </ItemGroup>
 </Project>

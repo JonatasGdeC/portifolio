@@ -1,5 +1,33 @@
 [
   {
+    "title":"CashFlow",
+    "summary": "Desenvolvimento de aplicação web para acompanhamento de finanças pessoais",
+    "description": "Estudo, desenvolvimento e deploy de aplicação web que auxilia no controle das finanças pessoas.",
+    "category": "Desenvolvimento Full-stack",
+    "studies": true,
+    "tools": [
+      ".NET",
+      "EF Core",
+      "MySql",
+      "C#",
+      "Blazor",
+      "HTML",
+      "CSS"
+    ],
+    "links":{
+      "production": "https://cash-flow-jgc.vercel.app/",
+      "frontendGithub": "https://github.com/JonatasGdeC/CashFlow.Frontend",
+      "backendgithub": "https://github.com/JonatasGdeC/CashFlow.Backend"
+    },
+    "images": [
+      ".media/projects/cashflow/2.webp",
+      ".media/projects/cashflow/3.webp",
+      ".media/projects/cashflow/4.webp",
+      ".media/projects/cashflow/5.webp",
+      ".media/projects/cashflow/1.webp"
+    ]
+  },
+  {
     "title":"Zeemob",
     "summary": "Desenvolvimento e manutenção de site institucional da imobiliária Zeemob",
     "description": "Desenvolvimento e manutenção do website institucional da Zeemob utilizando Blazor Server, com foco em responsividade, performance e experiência do utilizador.",
