@@ -1,0 +1,79 @@
+.portfolio-shell {
+  min-height: 100vh;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(181, 200, 218, 0.14), transparent 24rem),
+    linear-gradient(180deg, #1f1a1b 0%, #211c1d 100%);
+  color: var(--color-white-primary);
+}
+
+.portfolio-shell.theme-light {
+  --color-white-primary: #1f1a1b;
+  --color-white-secondary: #5e666f;
+  --color-black-primary: #f6f1ea;
+  --color-blue-primary: #6b8199;
+  --color-blue-dark: #516378;
+  --color-grey-primary: #7a746e;
+  background:
+    radial-gradient(circle at top left, rgba(127, 149, 171, 0.18), transparent 24rem),
+    linear-gradient(180deg, #f7f2eb 0%, #ece4db 100%);
+}
+
+.portfolio-panel {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 8px 0 40px;
+}
+
+main {
+  width: 100%;
+}
+
+.main-layout-buttons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#blazor-error-ui {
+  color-scheme: dark;
+  background: var(--color-red-light);
+  color: var(--color-black-primary);
+  bottom: 0;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: none;
+  left: 0;
+  padding: 0.75rem 1.25rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+  cursor: pointer;
+  position: absolute;
+  right: 0.75rem;
+  top: 0.5rem;
+}
+
+@media (max-width: 920px) {
+  .portfolio-shell {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio-shell {
+    padding: 16px;
+  }
+
+  .portfolio-panel {
+    padding-bottom: 28px;
+  }
+}

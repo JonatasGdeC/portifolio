@@ -6,8 +6,7 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args: args);
 // Add services to the container.
 builder.Services.AddLocalization();
 builder.Services.AddScoped<SiteUiState>();
-builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents();
+builder.Services.AddRazorComponents().AddInteractiveServerComponents();
 
 builder.Services.AddControllers(); 
 

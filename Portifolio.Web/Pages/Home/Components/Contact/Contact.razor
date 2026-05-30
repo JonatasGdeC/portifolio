@@ -1,0 +1,40 @@
+<section class="content-section contact-section" id="contact">
+    <div class="section-heading">
+        <h2>@Localizer[name: "ContactTitle"]</h2>
+        <span></span>
+    </div>
+
+    <p class="section-copy contact-copy">
+        @Localizer[name: "ContactCopy"]
+    </p>
+
+    <form action="@Web3FormsEndpoint" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="@AccessKey" />
+        <input type="hidden" name="subject" value="Novo contacto pelo portifolio" />
+        <input type="hidden" name="from_name" value="Portifolio JonatasGdeC" />
+        <input type="hidden" name="redirect" value="@SuccessRedirectUrl" />
+        <input class="botcheck" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" />
+
+        <label>
+            <span>@Localizer[name: "ContactName"]</span>
+            <input type="text" name="name" placeholder="@Localizer[name: "ContactNamePlaceholder"]" required />
+        </label>
+
+        <label>
+            <span>@Localizer[name: "ContactEmail"]</span>
+            <input type="email" name="email" placeholder="@Localizer[name: "ContactEmailPlaceholder"]" required />
+        </label>
+
+        <label>
+            <span>@Localizer[name: "ContactMessage"]</span>
+            <textarea name="message" rows="5" placeholder="@Localizer[name: "ContactMessagePlaceholder"]" required></textarea>
+        </label>
+
+        <button type="submit" disabled="@IsMissingAccessKey">@Localizer[name: "ContactSubmit"]</button>
+
+        @if (!string.IsNullOrWhiteSpace(value: StatusMessage))
+        {
+            <p class="@StatusMessageClass" role="status">@StatusMessage</p>
+        }
+    </form>
+</section>

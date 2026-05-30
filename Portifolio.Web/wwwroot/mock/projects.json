@@ -1,0 +1,61 @@
+[
+  {
+    "title":"Zeemob",
+    "summary": "Desenvolvimento e manutenção de site institucional da imobiliária Zeemob",
+    "description": "Desenvolvimento e manutenção do website institucional da Zeemob utilizando Blazor Server, com foco em responsividade, performance e experiência do utilizador.",
+    "category": "Desenvolvimento Front-end",
+    "tools": [
+      "Blazor",
+      "C#",
+      "HTML",
+      "CSS"
+    ],
+    "url": "https://www.zeemob.com",
+    "githubUrl": null,
+    "images": [
+      ".media/projects/zeemob/1.webp",
+      ".media/projects/zeemob/2.webp",
+      ".media/projects/zeemob/3.webp"
+    ]
+  },
+  {
+    "title":"Iplace",
+    "summary": "Manutenção de website institucional da imobiliária Iplace",
+    "description": "Manutenção do website institucional da Iplace utilizando Blazor Server, com foco em responsividade, performance e experiência do utilizador.",
+    "category": "Manutenção em Front-end",
+    "tools": [
+      "Blazor",
+      "C#",
+      "HTML",
+      "CSS",
+      "Mudblazor"
+    ],
+    "url": "https://www.iplace.pt/",
+    "githubUrl": null,
+    "images": [
+      ".media/projects/iplace/1.webp",
+      ".media/projects/iplace/2.webp",
+      ".media/projects/iplace/3.webp"
+    ]
+  },
+  {
+    "title":"SimpliEsgoto",
+    "summary": "Desenvolvimento e manutenção de site institucional da SimpliEsgoto",
+    "description": "Desenvolvimento e manutenção do website institucional da Simpliesgoto utilizando Blazor Server, com foco em responsividade, performance e experiência do utilizador.",
+    "category": "Desenvolvimento Front-end",
+    "tools": [
+      "Blazor",
+      "C#",
+      "HTML",
+      "CSS",
+      "Mudblazor"
+    ],
+    "url": "https://www.simpliesgoto.pt/",
+    "githubUrl": null,
+    "images": [
+      ".media/projects/simpliesgoto/1.webp",
+      ".media/projects/simpliesgoto/2.webp",
+      ".media/projects/simpliesgoto/3.webp"
+    ]
+  }
+]
