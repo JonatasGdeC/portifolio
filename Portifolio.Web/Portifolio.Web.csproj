@@ -34,6 +34,7 @@
       <AdditionalFiles Include="Pages\Home\Components\About\About.razor" />
       <AdditionalFiles Include="Pages\Home\Components\Contact\Contact.razor" />
       <AdditionalFiles Include="Pages\Home\Components\Hero\Hero.razor" />
+      <AdditionalFiles Include="Pages\Home\Components\Work\Work.razor" />
       <AdditionalFiles Include="Pages\Home\Main\Home.razor" />
     </ItemGroup>
 

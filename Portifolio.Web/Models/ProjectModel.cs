@@ -1,18 +1,20 @@
-using System.Text.Json.Serialization;
-
 namespace Portifolio.Web.Models;
 
-public class ProjectModel
+public record ProjectModel
 {
-    public string Title { get; set; } = string.Empty;
-    public string Summary { get; set; } = string.Empty;
-    public string Description { get; set; } = string.Empty;
-    public string Category { get; set; } = string.Empty;
-    public List<string> Tools { get; set; } = [];
-    public string? Url { get; set; }
+    public string Title { get; init; } = string.Empty;
+    public string Summary { get; init; } = string.Empty;
+    public string Description { get; init; } = string.Empty;
+    public string Category { get; init; } = string.Empty;
+    public bool Studies { get; set; }
+    public List<string> Tools { get; init; } = [];
+    public Links Links { get; init; } = new();
+    public List<string> Images { get; init; } = [];
+}
 
-    [JsonPropertyName(name: "githubUrl")]
-    public string? UrlGithub { get; set; }
-
-    public List<string> Images { get; set; } = [];
+public record Links
+{
+    public string? Production { get; init; }
+    public string? FrontendGithub { get; init; }
+    public string? BackendGithub { get; init; }
 }

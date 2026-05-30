@@ -16,9 +16,7 @@ builder.Services.AddScoped(implementationFactory: sp => new HttpClient { BaseAdd
 
 WebAssemblyHost host = builder.Build();
 
-string? selectedCulture = await host.Services.GetRequiredService<IJSRuntime>()
-    .InvokeAsync<string?>(identifier: "localStorage.getItem", args: "culture");
-
+string? selectedCulture = await host.Services.GetRequiredService<IJSRuntime>().InvokeAsync<string?>(identifier: "localStorage.getItem", args: "culture");
 string[] supportedCultures = ["pt", "en", "es"];
 string cultureName = supportedCultures.Contains(value: selectedCulture) ? selectedCulture! : supportedCultures[0];
 CultureInfo culture = new(name: cultureName);
