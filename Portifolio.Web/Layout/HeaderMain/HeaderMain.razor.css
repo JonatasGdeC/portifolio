@@ -56,6 +56,11 @@
     align-items: center;
   }
 
+  .topbar-links {
+    display: none;
+  }
+
+
   .topbar-start {
     justify-items: center;
   }
@@ -64,9 +69,5 @@
 @media (max-width: 640px) {
   .topbar-links {
     justify-content: center;
-  }
-
-  .topbar-links {
-    gap: 14px 18px;
   }
 }
