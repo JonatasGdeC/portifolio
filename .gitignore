@@ -6,6 +6,8 @@
 # dotenv files
 .env
 
+.vercel
+
 # User-specific files
 *.rsuser
 *.suo
@@ -482,3 +484,4 @@ $RECYCLE.BIN/
 *.swp
 .idea
 .codex
+.vercel
