@@ -1,0 +1,22 @@
+@using Portifolio.Web.Components.Settings
+@using Portifolio.Web.Layout.ContactMain
+@using Portifolio.Web.Layout.FooterMain
+@using Portifolio.Web.Layout.HeaderMain
+@inherits LayoutComponentBase
+@implements IDisposable
+
+<CascadingValue Value="UiState">
+    <div class="portfolio-shell @ThemeClass">
+        <div class="portfolio-panel">
+            <HeaderMain/>
+            <main>
+                @Body
+            </main>
+            <FooterMain/>
+        </div>
+    </div>
+    <div class="main-layout-buttons">
+        <ContactMain/>
+        <Settings/>
+    </div>
+</CascadingValue>

@@ -1,0 +1,42 @@
+<section class="content-section" id="about">
+    <div class="section-heading">
+        <h2>@Localizer[name: "AboutTitle"]</h2>
+        <span></span>
+    </div>
+
+    <p class="section-copy">
+        @Localizer[name: "AboutCopy"]
+    </p>
+
+    <div class="skills-grid">
+        <article class="skill-card">
+            <h3>@Localizer[name: "SkillFrontend"]</h3>
+            <ul class="tools-list" aria-label="Ferramentas utilizadas">
+                @foreach (string tool in _frontEndSkills)
+                {
+                    <li>@tool</li>
+                }
+            </ul>
+        </article>
+
+        <article class="skill-card">
+            <h3>@Localizer[name: "SkillBackend"]</h3>
+            <ul class="tools-list" aria-label="Ferramentas utilizadas">
+                @foreach (string tool in _backendSkills)
+                {
+                    <li>@tool</li>
+                }
+            </ul>
+        </article>
+
+        <article class="skill-card">
+            <h3>@Localizer[name: "SkillOthers"]</h3>
+            <ul class="tools-list" aria-label="Ferramentas utilizadas">
+                @foreach (string tool in _otherSkills)
+                {
+                    <li>@tool</li>
+                }
+            </ul>
+        </article>
+    </div>
+</section>

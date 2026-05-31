@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NavHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="NavAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="NavWork" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="NavContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="HeroGreeting" xml:space="preserve">
+    <value>Hello, I am Jônatas Gonçalves de Carvalho,</value>
+  </data>
+  <data name="HeroTitle" xml:space="preserve">
+    <value>Full Stack Developer</value>
+  </data>
+  <data name="HeroCta" xml:space="preserve">
+    <value>Contact me</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="AboutCopy" xml:space="preserve">
+    <value>I am a Full Stack Developer focused on .NET and Blazor, building complete web applications — from user interfaces to API integration and business logic.
+
+I have experience developing performant and responsive systems, with attention to best practices, clean code, and user experience.
+
+I aim to build efficient, scalable solutions that solve real problems.</value>
+  </data>
+  <data name="SkillFrontend" xml:space="preserve">
+    <value>Front-End</value>
+  </data>
+  <data name="SkillBackend" xml:space="preserve">
+    <value>Back-End</value>
+  </data>
+  <data name="SkillOthers" xml:space="preserve">
+    <value>Others Skills</value>
+  </data>
+  <data name="WorkTitle" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="WorkCopy" xml:space="preserve">
+    <value>Projects that reflect how I approach problem-solving and build real-world applications.</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Get in touch</value>
+  </data>
+  <data name="ContactCopy" xml:space="preserve">
+    <value>I would love to hear about your project and how I can help. Fill out the form and I will get back to you as soon as possible.</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ContactNamePlaceholder" xml:space="preserve">
+    <value>Your name</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ContactEmailPlaceholder" xml:space="preserve">
+    <value>email@example.com</value>
+  </data>
+  <data name="ContactMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="ContactMessagePlaceholder" xml:space="preserve">
+    <value>Tell me about your project</value>
+  </data>
+  <data name="ContactSubmit" xml:space="preserve">
+    <value>Send message</value>
+  </data>
+  <data name="ContactSuccess" xml:space="preserve">
+    <value>Contact sent successfully.</value>
+  </data>
+  <data name="ContactMissingAccessKey" xml:space="preserve">
+    <value>Configure the Web3Forms access key to enable contact submissions.</value>
+  </data>
+  <data name="ContactError" xml:space="preserve">
+    <value>Unable to send the contact right now. Please try again later.</value>
+  </data>
+</root>
