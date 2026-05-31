@@ -1,0 +1,15 @@
+﻿<link rel="canonical" href="@CanonicalUrl" />
+<meta property="og:url" content="@CanonicalUrl" />
+<meta name="description" content="@Description" />
+<meta property="twitter:description" content="@Description" />
+<meta property="og:description" content="@Description" />
+<meta name="og:title" property="og:title" content="@OgTitle">
+<meta name="twitter:card" content="@OgTitle">
+<meta property="twitter:title" content="@OgTitle" />
+@foreach(string article in ArticleTag)
+{
+  <meta property="article:tag" content="@article">
+}
+<meta property="og:image" content="@Image"/>
+<meta property="twitter:image" content="@Image"/>
+<meta property="og:image:alt" content="@ImageAlt"/>
