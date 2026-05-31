@@ -24,7 +24,6 @@ textarea {
     font: inherit;
 }
 
-
 .content-section {
     padding: 0 0 100px;
 
@@ -71,6 +70,22 @@ textarea {
     }
 }
 
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 26px;
+    list-style: none;
+
+    li {
+        border: 1px solid rgba(245, 240, 234, 0.18);
+        border-radius: 999px;
+        padding: 7px 10px;
+        color: var(--color-white-secondary);
+        font-size: 0.84rem;
+    }
+}
+
 .loading {
     width: 100vw;
     height: 100vh;
@@ -99,7 +114,6 @@ textarea {
     height: 180px;
     border-radius: 50%;
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,9 +173,7 @@ textarea {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-
     background: rgba(255,255,255,.15);
-
     animation: pulse 1.5s infinite;
 }
 

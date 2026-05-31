@@ -11,17 +11,32 @@
     <div class="skills-grid">
         <article class="skill-card">
             <h3>@Localizer[name: "SkillFrontend"]</h3>
-            <p>@Localizer[name: "SkillFrontendCopy"]</p>
+            <ul class="tools-list" aria-label="Ferramentas utilizadas">
+                @foreach (string tool in _frontEndSkills)
+                {
+                    <li>@tool</li>
+                }
+            </ul>
         </article>
 
         <article class="skill-card">
             <h3>@Localizer[name: "SkillBackend"]</h3>
-            <p>@Localizer[name: "SkillBackendCopy"]</p>
+            <ul class="tools-list" aria-label="Ferramentas utilizadas">
+                @foreach (string tool in _backendSkills)
+                {
+                    <li>@tool</li>
+                }
+            </ul>
         </article>
 
         <article class="skill-card">
             <h3>@Localizer[name: "SkillOthers"]</h3>
-            <p>@Localizer[name: "SkillOthersCopy"]</p>
+            <ul class="tools-list" aria-label="Ferramentas utilizadas">
+                @foreach (string tool in _otherSkills)
+                {
+                    <li>@tool</li>
+                }
+            </ul>
         </article>
     </div>
 </section>

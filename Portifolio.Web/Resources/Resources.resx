@@ -61,20 +61,11 @@ I aim to build efficient, scalable solutions that solve real problems.</value>
   <data name="SkillFrontend" xml:space="preserve">
     <value>Front-End</value>
   </data>
-  <data name="SkillFrontendCopy" xml:space="preserve">
-    <value>Blazor | HTML | CSS | JavaScript | UX/UI | Figma | Lighthouse | SEO</value>
-  </data>
   <data name="SkillBackend" xml:space="preserve">
     <value>Back-End</value>
   </data>
-  <data name="SkillBackendCopy" xml:space="preserve">
-    <value>C# | .NET | Entity Framework | SQL Server | SQLite | APIs REST</value>
-  </data>
   <data name="SkillOthers" xml:space="preserve">
     <value>Others Skills</value>
-  </data>
-  <data name="SkillOthersCopy" xml:space="preserve">
-    <value>GIT | Trello</value>
   </data>
   <data name="WorkTitle" xml:space="preserve">
     <value>Work</value>

@@ -78,12 +78,12 @@
                 <h3 id="project-modal-title">@SelectedProject.Title</h3>
                 <p class="modal-description">@SelectedProject.Description</p>
 
-                <div class="tools-list" aria-label="Ferramentas utilizadas">
+                <ul class="tools-list" aria-label="Ferramentas utilizadas">
                     @foreach (string tool in SelectedProject.Tools)
                     {
-                        <span>@tool</span>
+                        <li>@tool</li>
                     }
-                </div>
+                </ul>
 
                 <div class="project-links">
                     @if (!string.IsNullOrWhiteSpace(value: SelectedProject.Links.Production))

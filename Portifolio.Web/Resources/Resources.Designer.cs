@@ -38,7 +38,7 @@ namespace Portifolio.Web.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Portifolio.Resources.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Portifolio.Web.Resources.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -109,6 +109,15 @@ namespace Portifolio.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unable to send the contact right now. Please try again later..
+        /// </summary>
+        public static string ContactError {
+            get {
+                return ResourceManager.GetString("ContactError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Message.
         /// </summary>
         public static string ContactMessage {
@@ -123,6 +132,15 @@ namespace Portifolio.Web.Resources {
         public static string ContactMessagePlaceholder {
             get {
                 return ResourceManager.GetString("ContactMessagePlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configure the Web3Forms access key to enable contact submissions..
+        /// </summary>
+        public static string ContactMissingAccessKey {
+            get {
+                return ResourceManager.GetString("ContactMissingAccessKey", resourceCulture);
             }
         }
         
@@ -150,6 +168,15 @@ namespace Portifolio.Web.Resources {
         public static string ContactSubmit {
             get {
                 return ResourceManager.GetString("ContactSubmit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact sent successfully..
+        /// </summary>
+        public static string ContactSuccess {
+            get {
+                return ResourceManager.GetString("ContactSuccess", resourceCulture);
             }
         }
         
@@ -253,15 +280,6 @@ namespace Portifolio.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C# | .NET | Entity Framework | SQL Server | SQLite | APIs REST.
-        /// </summary>
-        public static string SkillBackendCopy {
-            get {
-                return ResourceManager.GetString("SkillBackendCopy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Front-End.
         /// </summary>
         public static string SkillFrontend {
@@ -271,29 +289,11 @@ namespace Portifolio.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blazor | HTML | CSS | JavaScript | UX/UI | Figma | Lighthouse | SEO.
-        /// </summary>
-        public static string SkillFrontendCopy {
-            get {
-                return ResourceManager.GetString("SkillFrontendCopy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Others Skills.
         /// </summary>
         public static string SkillOthers {
             get {
                 return ResourceManager.GetString("SkillOthers", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to GIT | Trello.
-        /// </summary>
-        public static string SkillOthersCopy {
-            get {
-                return ResourceManager.GetString("SkillOthersCopy", resourceCulture);
             }
         }
         
