@@ -109,4 +109,7 @@ I aim to build efficient, scalable solutions that solve real problems.</value>
   <data name="ContactError" xml:space="preserve">
     <value>Unable to send the contact right now. Please try again later.</value>
   </data>
+  <data name="SkillArchitecture" xml:space="preserve">
+    <value>Architecture and Best Practices</value>
+  </data>
 </root>
