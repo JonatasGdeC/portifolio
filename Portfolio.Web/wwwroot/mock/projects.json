@@ -62,10 +62,10 @@
       "backendGithub": "https://github.com/JonatasGdeC/CashFlow.Backend"
     },
     "images": [
-      "./media/projects/cashflow/5.webp",
       "./media/projects/cashflow/2.webp",
       "./media/projects/cashflow/3.webp",
       "./media/projects/cashflow/4.webp",
+      "./media/projects/cashflow/5.webp",
       "./media/projects/cashflow/1.webp"
     ]
   },
