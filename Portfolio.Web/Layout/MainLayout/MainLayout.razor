@@ -1,0 +1,22 @@
+@inherits LayoutComponentBase
+@using Portfolio.Web.Components.Settings
+@using Portfolio.Web.Layout.ContactMain
+@using Portfolio.Web.Layout.FooterMain
+@using Portfolio.Web.Layout.HeaderMain
+@implements IDisposable
+
+<CascadingValue Value="UiState">
+    <div class="portfolio-shell @ThemeClass">
+        <div class="portfolio-panel">
+            <HeaderMain/>
+            <main>
+                @Body
+            </main>
+            <FooterMain/>
+        </div>
+    </div>
+    <div class="main-layout-buttons">
+        <ContactMain/>
+        <Settings/>
+    </div>
+</CascadingValue>
