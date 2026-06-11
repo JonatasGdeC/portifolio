@@ -24,8 +24,8 @@ jobs:
 
       - name: Create production appsettings
         run: |
-          mkdir -p Portifolio.Web/wwwroot
-          cat > Portifolio.Web/wwwroot/appsettings.Production.json << EOF
+          mkdir -p Portfolio.Web/wwwroot
+          cat > Portfolio.Web/wwwroot/appsettings.Production.json << EOF
           {
             "Web3Forms": {
                 "AccessKey": "${{ secrets.WEB3FORMS_ACCESS_KEY }}",
@@ -35,7 +35,7 @@ jobs:
           EOF
 
       - name: Publish
-        run: dotnet publish Portifolio.Web/Portifolio.Web.csproj -c Release -o publish
+        run: dotnet publish Portfolio.Web/Portfolio.Web.csproj -c Release -o publish
 
       - name: Add Vercel files
         run: |
