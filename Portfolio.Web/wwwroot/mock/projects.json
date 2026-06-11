@@ -1,34 +1,76 @@
 [
   {
-    "title":"CashFlow",
-    "summary": "Desenvolvimento de aplicação web para acompanhamento de finanças pessoais",
-    "description": "Estudo, desenvolvimento e deploy de aplicação web que auxilia no controle das finanças pessoas.",
-    "category": "Desenvolvimento Full-stack",
+    "title": "Kanban",
+    "summary": "Aplicação web para gerenciamento de tarefas utilizando o método Kanban.",
+    "description": "Projeto Full Stack desenvolvido para gerenciamento de tarefas através de quadros Kanban, com autenticação JWT, organização por colunas, movimentação de cartões, persistência de dados e deploy em nuvem. O projeto foi criado com foco em arquitetura limpa, boas práticas de desenvolvimento e experiência do usuário.",
+    "category": "Desenvolvimento Full Stack",
     "studies": true,
     "tools": [
       ".NET",
-      "EF Core",
-      "MySql",
+      "ASP.NET Core",
       "C#",
-      "Blazor",
+      "Entity Framework",
+      "PostgreSQL",
+      "Blazor WebAssembly",
+      "JWT",
+      "Docker",
+      "GitHub Actions",
+      "AWS",
       "HTML",
       "CSS"
     ],
-    "links":{
-      "production": "https://cash-flow-jgc.vercel.app/",
-      "frontendGithub": "https://github.com/JonatasGdeC/CashFlow.Frontend",
-      "backendgithub": "https://github.com/JonatasGdeC/CashFlow.Backend"
+    "links": {
+      "production": "https://kanban-jgc.vercel.app/",
+      "frontendGithub": "https://github.com/JonatasGdeC/Kanban.Frontend",
+      "backendGithub": "https://github.com/JonatasGdeC/Kanban.Backend"
     },
     "images": [
-      ".media/projects/cashflow/2.webp",
-      ".media/projects/cashflow/3.webp",
-      ".media/projects/cashflow/4.webp",
-      ".media/projects/cashflow/5.webp",
-      ".media/projects/cashflow/1.webp"
+      "./media/projects/kanban/1.webp",
+      "./media/projects/kanban/2.webp",
+      "./media/projects/kanban/3.webp",
+      "./media/projects/kanban/4.webp",
+      "./media/projects/kanban/5.webp",
+      "./media/projects/kanban/6.webp",
+      "./media/projects/kanban/7.webp"
     ]
   },
   {
-    "title":"Zeemob",
+    "title": "CashFlow",
+    "summary": "Aplicação web para gerenciamento de finanças pessoais, receitas, despesas e metas financeiras.",
+    "description": "Projeto Full Stack desenvolvido para auxiliar no controle financeiro pessoal, permitindo o gerenciamento de receitas, despesas, categorias, metas financeiras e geração de relatórios. Possui autenticação JWT, dashboard com indicadores, filtros avançados, exportação de relatórios em PDF e Excel e arquitetura baseada em Clean Architecture e princípios SOLID.",
+    "category": "Desenvolvimento Full Stack",
+    "studies": true,
+    "tools": [
+      ".NET 10",
+      "ASP.NET Core",
+      "C#",
+      "Entity Framework Core",
+      "MySQL",
+      "Blazor WebAssembly",
+      "JWT",
+      "Docker",
+      "GitHub Actions",
+      "REST API",
+      "ClosedXML",
+      "MigraDoc",
+      "HTML",
+      "CSS"
+    ],
+    "links": {
+      "production": "https://cash-flow-jgc.vercel.app/",
+      "frontendGithub": "https://github.com/JonatasGdeC/CashFlow.Frontend",
+      "backendGithub": "https://github.com/JonatasGdeC/CashFlow.Backend"
+    },
+    "images": [
+      "./media/projects/cashflow/5.webp",
+      "./media/projects/cashflow/2.webp",
+      "./media/projects/cashflow/3.webp",
+      "./media/projects/cashflow/4.webp",
+      "./media/projects/cashflow/1.webp"
+    ]
+  },
+  {
+    "title": "Zeemob",
     "summary": "Desenvolvimento e manutenção de site institucional da imobiliária Zeemob",
     "description": "Desenvolvimento e manutenção do website institucional da Zeemob utilizando Blazor Server, com foco em responsividade, performance e experiência do utilizador.",
     "category": "Desenvolvimento Front-end",
@@ -38,7 +80,7 @@
       "HTML",
       "CSS"
     ],
-    "links":{
+    "links": {
       "production": "https://www.zeemob.com"
     },
     "images": [
@@ -48,7 +90,7 @@
     ]
   },
   {
-    "title":"SimpliEsgoto",
+    "title": "SimpliEsgoto",
     "summary": "Desenvolvimento e manutenção de site institucional da SimpliEsgoto",
     "description": "Desenvolvimento e manutenção do website institucional da Simpliesgoto utilizando Blazor Server, com foco em responsividade, performance e experiência do utilizador.",
     "category": "Desenvolvimento Front-end",
@@ -59,7 +101,7 @@
       "CSS",
       "Mudblazor"
     ],
-    "links":{
+    "links": {
       "production": "https://www.simpliesgoto.pt/"
     },
     "images": [
