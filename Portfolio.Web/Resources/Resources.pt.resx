@@ -100,4 +100,7 @@ Busco desenvolver soluções bem estruturadas, escaláveis e que resolvam proble
   <data name="ContactError" xml:space="preserve">
     <value>Nao foi possivel enviar o contato agora. Tente novamente mais tarde.</value>
   </data>
+  <data name="SkillArchitecture" xml:space="preserve">
+    <value>Arquitetura e Boas Práticas</value>
+  </data>
 </root>

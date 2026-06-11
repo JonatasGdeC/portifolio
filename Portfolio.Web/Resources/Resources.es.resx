@@ -100,4 +100,7 @@ Busco construir soluciones escalables y eficientes que resuelvan problemas reale
   <data name="ContactError" xml:space="preserve">
     <value>No fue posible enviar el contacto ahora. Intentalo de nuevo mas tarde.</value>
   </data>
+  <data name="SkillArchitecture" xml:space="preserve">
+    <value>Arquitectura y mejores prácticas</value>
+  </data>
 </root>

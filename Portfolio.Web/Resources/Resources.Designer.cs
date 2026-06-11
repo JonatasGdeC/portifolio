@@ -38,7 +38,7 @@ namespace Portfolio.Web.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Portifolio.Web.Resources.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Portfolio.Web.Resources.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -267,6 +267,15 @@ namespace Portfolio.Web.Resources {
         public static string SettingsTitle {
             get {
                 return ResourceManager.GetString("SettingsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Architecture and Best Practices.
+        /// </summary>
+        public static string SkillArchitecture {
+            get {
+                return ResourceManager.GetString("SkillArchitecture", resourceCulture);
             }
         }
         

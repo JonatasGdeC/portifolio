@@ -9,9 +9,11 @@
     </p>
 
     <div class="skills-grid">
+
         <article class="skill-card">
             <h3>@Localizer[name: "SkillFrontend"]</h3>
-            <ul class="tools-list" aria-label="Ferramentas utilizadas">
+
+            <ul class="tools-list">
                 @foreach (string tool in _frontEndSkills)
                 {
                     <li>@tool</li>
@@ -21,7 +23,8 @@
 
         <article class="skill-card">
             <h3>@Localizer[name: "SkillBackend"]</h3>
-            <ul class="tools-list" aria-label="Ferramentas utilizadas">
+
+            <ul class="tools-list">
                 @foreach (string tool in _backendSkills)
                 {
                     <li>@tool</li>
@@ -30,13 +33,26 @@
         </article>
 
         <article class="skill-card">
-            <h3>@Localizer[name: "SkillOthers"]</h3>
-            <ul class="tools-list" aria-label="Ferramentas utilizadas">
-                @foreach (string tool in _otherSkills)
+            <h3>Cloud & DevOps</h3>
+
+            <ul class="tools-list">
+                @foreach (string tool in _devOpsSkills)
                 {
                     <li>@tool</li>
                 }
             </ul>
         </article>
+
+        <article class="skill-card">
+            <h3>@Localizer[name: "SkillArchitecture"]</h3>
+
+            <ul class="tools-list">
+                @foreach (string tool in _architectureSkills)
+                {
+                    <li>@tool</li>
+                }
+            </ul>
+        </article>
+
     </div>
 </section>

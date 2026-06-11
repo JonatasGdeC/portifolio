@@ -4,18 +4,52 @@ public partial class About
 {
     private readonly List<string> _frontEndSkills =
     [
-        "Blazor", "HTML", "CSS", "JavaScript", "UX/UI",
-        "Figma", "Lighthouse", "SEO"
+        "Blazor",
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "UX/UI",
+        "Figma",
+        "Responsive",
+        "Lighthouse",
+        "SEO"
     ];
 
     private readonly List<string> _backendSkills =
     [
-        "C#", ".NET", "EF Core", "XUnit", "JWT", "MySql", 
-        "SQL", "Azure", "API REST", "Docker", "CI/CD"
+        "C#",
+        ".NET",
+        "ASP.NET Core",
+        "EF Core",
+        "JWT",
+        "API REST",
+        "Swagger",
+        "XUnit",
+        "MailKit",
+        "MySql",
+        "PostgreSQL",
+        "SQL"
     ];
 
-    private readonly List<string> _otherSkills =
+    private readonly List<string> _devOpsSkills =
     [
-        "Git", "Trello", "SOLID", "DDD", "DRY"
+        "Azure",
+        "AWS",
+        "Supabase",
+        "Docker",
+        "GitHub Actions",
+        "CI/CD",
+        "Git",
+        "GitHub"
+    ];
+
+    private readonly List<string> _architectureSkills =
+    [
+        "Clean Architecture",
+        "SOLID",
+        "DDD",
+        "DRY"
     ];
 }

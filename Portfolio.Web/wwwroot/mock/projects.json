@@ -10,6 +10,7 @@
       "ASP.NET Core",
       "C#",
       "Entity Framework",
+      "MailKit",
       "PostgreSQL",
       "Blazor WebAssembly",
       "JWT",
@@ -36,7 +37,7 @@
   },
   {
     "title": "CashFlow",
-    "summary": "Aplicação web para gerenciamento de finanças pessoais, receitas, despesas e metas financeiras.",
+    "summary": "Aplicação web para gerenciamento de finanças pessoais.",
     "description": "Projeto Full Stack desenvolvido para auxiliar no controle financeiro pessoal, permitindo o gerenciamento de receitas, despesas, categorias, metas financeiras e geração de relatórios. Possui autenticação JWT, dashboard com indicadores, filtros avançados, exportação de relatórios em PDF e Excel e arquitetura baseada em Clean Architecture e princípios SOLID.",
     "category": "Desenvolvimento Full Stack",
     "studies": true,
